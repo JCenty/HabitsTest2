@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+h1, h2 {
+  color: #333;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+button {
+  margin: 4px 0;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+.history-day {
+  margin-bottom: 10px;
+  padding: 8px;
+  background: #f2f2f2;
+  border-radius: 6px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trening Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>💪 Trening Tracker</h1>
+
+  <section>
+    <h2>📈 Statystyki</h2>
+    <ul id="stats-list"></ul>
+  </section>
+
+  <section>
+    <h2>📝 Akcje (Dziś)</h2>
+    <ul id="actions-today"></ul>
+  </section>
+
+  <section>
+    <h2>🕘 Akcje (Wczoraj)</h2>
+    <ul id="actions-yesterday"></ul>
+  </section>
+
+  <section>
+    <h2>📅 Historia tygodnia</h2>
+    <div id="history"></div>
+  </section>
+
+  <section>
+    <h2>🧪 Testowanie</h2>
+    <button onclick="evaluateWeek()">🔁 Podsumuj tydzień (TEST)</button>
+  </section>
+
+<section>
+  <h2>➕ Dodaj statystykę</h2>
+  <input type="text" id="new-stat-name" placeholder="Nazwa statystyki" />
+  <button onclick="addStat()">Dodaj statystykę</button>
+</section>
+
+<section>
+  <h2>➕ Dodaj akcję</h2>
+  <input type="text" id="new-action-name" placeholder="Nazwa akcji" /><br />
+  <select id="new-action-stat"></select><br />
+  <input type="number" id="new-action-min" placeholder="Min tygodniowo" /><br />
+  <input type="number" id="new-action-max" placeholder="Max tygodniowo" /><br />
+  <button onclick="addAction()">Dodaj akcję</button>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
